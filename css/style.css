@@ -1,9 +1,28 @@
 ﻿@charset "UTF-8";
 
-h1 {
-    color: #000000;
+#main-header {
+    color: #ffffff;
     font-family: "Comic Sans MS";
+    /* font-family: monospace; */
+    font-size: 50px;
     text-align: center;
+    text-shadow:3px 3px #4879ff;
+}
+
+.star-icon{
+    width: 150px; /* Adjust this value to change the size */
+    height: auto; /* This maintains the aspect ratio */
+    vertical-align: center; /* This aligns the image with the middle of the text */
+    display: inline-block; /* This makes the image inline with text */
+    margin-right: 5px; /* This adds some space between the image and text */
+}
+
+.top-div {
+    background-color: #2f2f2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 }
 
 #text1{
@@ -15,5 +34,6 @@ h1 {
 }
 
 body{
-    background-color: #09b8db;
+    background-color: #4879ff;
+    background-image: url(../images/stars.png);
 }
