@@ -1,0 +1,11 @@
+﻿@charset "UTF-8";
+
+h1 {
+    color: #000000;
+    font-family: "Comic Sans MS";
+    text-align: center;
+}
+
+body{
+    background-color: #09b8db;
+}
