@@ -2,7 +2,7 @@
 
 #main-header {
     color: #ffffff;
-    font-family: "Comic Sans MS";
+    font-family: 'Trebuchet MS';
     /* font-family: monospace; */
     font-size: 50px;
     text-align: center;
@@ -18,14 +18,14 @@
 }
 
 .top-div {
-    background-color: #2f2f2f;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 125px;
 }
 
 #text1{
+    color: white;
     font-family: monospace;
     font-size: 18px;
     font-weight: 100;
@@ -34,6 +34,6 @@
 }
 
 body{
-    background-color: #4879ff;
+    background-color: #161515;
     background-image: url(../images/stars.png);
 }
