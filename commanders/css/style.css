@@ -63,12 +63,6 @@
     font-size: 15px;
 }
 
-.tv{
-    position: relative;
-    height: 300px;
-    width: 650px;
-    z-index: 2;
-}
 
 .video{
     position: relative;
@@ -76,17 +70,24 @@
     height: fit-content;
 }
 
+.tv{
+    position: relative;
+    height: 350px;
+    width: 700px;
+    z-index: 2;
+}
+
 .gif-container {
     position: absolute;
-    top: 10%; /* Adjust these values to position the GIF correctly */
+    top: 12%; /* Adjust these values to position the GIF correctly */
     left: 10%;
     width: 80%; /* Adjust the size to fit your TV's "screen" area */
     height: 60%;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .gif-container img{
-    height: 230px;
+    height: 240px;
     width: auto;
 }
 
