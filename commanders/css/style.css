@@ -9,6 +9,15 @@
     text-shadow:3px 3px #ffb612;
 }
 
+.white-box-container {
+    background-color: white;
+    border: 5px solid #773141; 
+    padding: 20px;
+    box-shadow: 0 0 10px black; /* Subtle shadow */
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the box */
+}
+
 .top-div{
     display: flex;
     flex-direction: row;
@@ -55,7 +64,29 @@
 }
 
 .tv{
-    height: 400px;
+    position: relative;
+    height: 300px;
+    width: 650px;
+    z-index: 2;
+}
+
+.video{
+    position: relative;
+    width: fit-content; 
+    height: fit-content;
+}
+
+.gif-container {
+    position: absolute;
+    top: 10%; /* Adjust these values to position the GIF correctly */
+    left: 10%;
+    width: 80%; /* Adjust the size to fit your TV's "screen" area */
+    height: 60%;
+    z-index: 1;
+}
+
+.gif-container img{
+    height: 230px;
     width: auto;
 }
 
