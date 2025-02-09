@@ -1,0 +1,65 @@
+﻿@charset "UTF-8";
+
+#main-header {
+    color: #773141;
+    font-family: Georgia, 'Times New Roman';
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    text-shadow:3px 3px #ffb612;
+}
+
+.top-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.helmet{
+    height: 150px;
+    width: auto;
+}
+
+.film-container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.film-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+    gap: 10px;
+}
+
+.film-link{
+    padding: 10px;
+    background-color: #ffb612;
+    max-width: 400px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.tv{
+    height: 400px;
+    width: auto;
+}
+
+body{
+    background-color: white;
+    background-image: url(../images/medalion.png);
+}

@@ -1,8 +1,10 @@
 ﻿@charset "UTF-8";
 
+
 #main-header {
     color: #ffffff;
-    font-family: 'Trebuchet MS';
+    font-family: Georgia, 'Times New Roman';
+    font-weight: bold;
     /* font-family: monospace; */
     font-size: 50px;
     text-align: center;
@@ -17,7 +19,7 @@
     margin-right: 5px; /* This adds some space between the image and text */
 }
 
-.top-div {
+.top-div{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,12 +27,44 @@
 }
 
 #text1{
-    color: white;
+    color: green;
     font-family: monospace;
     font-size: 18px;
-    font-weight: 100;
-    text-align: left;
+    font-weight: bold;
+    text-align: center;
     padding: 20px;
+}
+
+.links-container{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: center;
+    justify-content: center;
+}
+
+.link-item {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.link-item a {
+    color: blue;
+    background-color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    max-width: 150px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.icon{
+    width: 150px;
+    height: auto;
 }
 
 body{
