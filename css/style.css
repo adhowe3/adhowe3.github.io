@@ -6,47 +6,50 @@
     font-family: Georgia, 'Times New Roman';
     font-weight: bold;
     /* font-family: monospace; */
-    font-size: 50px;
+    font-size: clamp(20px, 3vmax, 50px);
     text-align: center;
     text-shadow:3px 3px #4879ff;
 }
 
 .star-icon{
-    width: 150px; /* Adjust this value to change the size */
+    width: 7vmax; 
     height: auto; /* This maintains the aspect ratio */
     vertical-align: center; /* This aligns the image with the middle of the text */
     display: inline-block; /* This makes the image inline with text */
-    margin-right: 5px; /* This adds some space between the image and text */
+    margin: 2vw; /* This adds some space between the image and text */
 }
 
 .top-div{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 125px;
+    height: 5vh;
+    padding-top: 2vmax;
 }
 
 #text1{
     color: green;
     font-family: monospace;
-    font-size: 18px;
+    font-size: 3vmin;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
+    padding: 3vmin;
 }
 
 .links-container{
-    padding-top: 100px;
+    padding-top: 6vh;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10vmin;
     align-content: center;
     justify-content: center;
 }
 
 .link-item {
     display: flex;
-    gap: 5px;
+    max-width: min-content;
+    max-height: min-content;
+    gap: 1vmin;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -57,13 +60,13 @@
     background-color: #ffffff;
     text-decoration: underline;
     font-weight: bold;
-    max-width: 150px;
+    max-width: 100em;
     font-family: monospace;
-    font-size: 15px;
+    font-size: (10px, 2vh, 15px);
 }
 
 .icon{
-    width: 150px;
+    width: 25vmin;
     height: auto;
 }
 
