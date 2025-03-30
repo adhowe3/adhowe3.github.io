@@ -50,33 +50,44 @@ p {
 #interpretation {
     margin-top: 20px; /* Add margin top to separate from results */
     margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 20px;    /* Add padding around the content */
     background-color: #f9f9f9; /* Optional: Add a light background color */
     border: 1px solid #ddd; /* Optional: Add a border */
     border-radius: 5px;   /* Optional: Add rounded corners */
   }
 
+  .color-descriptions li {
+    margin-bottom: 10px; /* Space between bullet points */
+  }
+
+
   .color-descriptions .red {
     background-color: rgba(255, 0, 0, 0.2); /* Light red background */
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    margin: 10px;
   }
   
   .color-descriptions .blue {
     background-color: rgba(0, 0, 255, 0.2); /* Light blue background */
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 5px;
   }
   
   .color-descriptions .white {
     background-color: rgba(200, 200, 200, 0.2); /* Light gray background for white */
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 5px;
   }
   
   .color-descriptions .yellow {
     background-color: rgba(255, 255, 0, 0.2); /* Light yellow background */
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 5px;
   }
   
