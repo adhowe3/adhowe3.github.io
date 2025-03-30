@@ -1,0 +1,81 @@
+/* styles.css */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+p {
+    font-size: large;
+    font-style: italic;
+}
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .question-group {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+/* Add padding to the interpretation div */
+#interpretation {
+    margin-top: 20px; /* Add margin top to separate from results */
+    padding: 20px;    /* Add padding around the content */
+    background-color: #f9f9f9; /* Optional: Add a light background color */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 5px;   /* Optional: Add rounded corners */
+  }
+
+  .color-descriptions .red {
+    background-color: rgba(255, 0, 0, 0.2); /* Light red background */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .color-descriptions .blue {
+    background-color: rgba(0, 0, 255, 0.2); /* Light blue background */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .color-descriptions .white {
+    background-color: rgba(200, 200, 200, 0.2); /* Light gray background for white */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .color-descriptions .yellow {
+    background-color: rgba(255, 255, 0, 0.2); /* Light yellow background */
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  #result {
+    margin-top: 20px;
+  }
+  
