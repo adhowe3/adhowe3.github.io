@@ -37,6 +37,10 @@ p {
     border: none;
     border-radius: 5px;
   }
+
+  .submitBtn{
+    margin-bottom: 10px;
+  }
   
   button:hover {
     background-color: #0056b3;
@@ -45,6 +49,7 @@ p {
 /* Add padding to the interpretation div */
 #interpretation {
     margin-top: 20px; /* Add margin top to separate from results */
+    margin-bottom: 40px;
     padding: 20px;    /* Add padding around the content */
     background-color: #f9f9f9; /* Optional: Add a light background color */
     border: 1px solid #ddd; /* Optional: Add a border */
