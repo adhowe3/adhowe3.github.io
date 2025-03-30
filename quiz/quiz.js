@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const submitBtn = document.getElementById("submitBtn");
     const form = document.forms["personalityTest"];
     const interpretationDiv = document.getElementById("interpretation"); // Get the interpretation div
-    let allQuestionsAnswered = true;
+    let allQuestionsAnswered = false;
 
     // Initially disable the button
     submitBtn.disabled = true;
