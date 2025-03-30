@@ -2,14 +2,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     const submitBtn = document.getElementById("submitBtn");
     const form = document.forms["personalityTest"];
-    const interpretationDiv = document.getElementById("interpretation"); // Get the interpretation div
     let allQuestionsAnswered = false;
 
     // Initially disable the button
     submitBtn.disabled = true;
     submitBtn.style.backgroundColor = "gray"; // Change the color to indicate it's disabled
     submitBtn.style.cursor = "not-allowed";   // Change the cursor to indicate it's disabled
-
 
     // Function to check if all questions are answered
     function checkAllQuestionsAnswered() {
@@ -89,7 +87,5 @@ document.addEventListener("DOMContentLoaded", function() {
         resultHTML += `<p>White Score: ${scores.c}</p>`;
         resultHTML += `<p>Yellow Score: ${scores.d}</p>`;
         resultDiv.innerHTML = resultHTML;
-
-        interpretationDiv.style.display = "block";
     });
 });
