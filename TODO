@@ -1,16 +1,20 @@
--add visitor number counter
 -upload retro looking photo of myself
 -favorite albums
--gifs of football moments
--gallery of artwork
--code and programs
+-gifs of football moments DONE
+-gallery of artwork 
+-code and programs 
 -links to favorite websites
 -play pause button for music
 -my own music
--blog
+-blog 
+    -How to set up your Onn. device with seperate 
 -things to sell
+-resume style website with projects
 
 DESIGN
 - images above blue link to page
 - 3D text / floating text
 - spike bubbles
+
+REMINDERS:
+python -m http.server
