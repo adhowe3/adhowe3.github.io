@@ -102,3 +102,87 @@ body{
     background-color: white;
     background-image: url(../images/medalion.png);
 }
+
+@media (max-width: 768px) {
+    #main-header {
+        font-size: 32px; /* smaller header on mobile */
+    }
+
+    .white-box-container {
+        padding: 15px;
+        max-width: 95vw; /* almost full viewport width */
+    }
+
+    .top-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; /* Vertically center the items */
+        gap: 20px; /* Optional: adds space between the elements */
+    }
+
+    .helmet {
+        height: 10vw; /* smaller helmets */
+    }
+
+    .banner {
+        flex-wrap: wrap; /* allow wrapping */
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .banner img {
+        max-width: 45vw; /* responsive width */
+        height: auto;
+    }
+
+    .film-container {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .film-list {
+        width: 90vw;
+        max-width: 400px;
+        gap: 8px;
+    }
+
+    .film-link {
+        font-size: 14px;
+        padding: 8px;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    .video {
+        width: 90vw;
+        max-width: 700px;
+        height: auto;
+        position: relative;
+    }
+
+    .tv {
+        width: 100%;
+        height: auto;
+    }
+
+    .gif-container {
+        top: 12%;
+        left: 10%;
+        width: 80%;
+        height: 60%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .gif-container img {
+        height: auto;
+        max-height: 240px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
