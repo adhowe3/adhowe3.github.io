@@ -1,5 +1,8 @@
 ﻿@charset "UTF-8";
 
+* {
+    cursor: url('../images/hand-cursor-32.png'), auto;
+}
 
 #main-header {
     color: #ffffff;

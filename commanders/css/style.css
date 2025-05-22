@@ -1,5 +1,15 @@
 ﻿@charset "UTF-8";
 
+* {
+    cursor: url('../../images/hand-cursor-32.png'), auto;
+}
+
+.pre-text {
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+}
+
 #main-header {
     color: #773141;
     font-family: Georgia, 'Times New Roman';

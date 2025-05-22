@@ -1,3 +1,15 @@
+body,
+a,
+a:hover,
+a:active,
+a:visited,
+button,
+button:hover,
+.film-link,
+.film-link:hover {
+    cursor: url('../../images/hand-cursor-32.png'), auto;
+}
+
 .top-div {
     font-family: Georgia, 'Times New Roman';
     font-size: 6vmax;
