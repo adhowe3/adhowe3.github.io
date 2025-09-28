@@ -1,7 +1,12 @@
 ﻿@charset "UTF-8";
 
 * {
-    cursor: url('../images/hand-cursor-32.png'), auto;
+    cursor: url('../images/mycursor.png'), auto;
+}
+
+/* cusor for hover */
+a:hover {
+  cursor: url('../images/hand-cursor.png') 0 0, pointer;
 }
 
 .profile-box {
@@ -31,6 +36,14 @@
 .profile-text {
     color: #fff;
     font-size: 14px;
+    font-family: monospace;
+    flex: 1;
+}
+
+.project-text {
+    color: #000;
+    font-size: 12px;
+    background: #fff;
     font-family: monospace;
     flex: 1;
 }
