@@ -85,6 +85,7 @@ body {
 /* Text block: readable and flexible */
 .image-text {
   margin-top: 12px;
+  margin-bottom: 75px;
   font-size: clamp(10px, 2.8vw, 12px);
   color: #fff;
   width: 100%;
@@ -94,16 +95,19 @@ body {
 }
 
 .h2-fluid {
-  font-size: clamp(12px, 3vw, 18px);
+  font-size: clamp(14px, 3vw, 18px);
+  margin-bottom: 15px;
+  text-decoration: underline;
 }
 
 /* Optional: make figure-caption consistent with image width */
 .figure-caption {
   margin-top: 8px;
-  color: #fff;
+  color: rgb(185, 185, 185);
   font-size: clamp(8px, 2.5vw, 12px);
   opacity: 0.9;
   padding: 0 10px;
   width: 100%;
   text-align: center;
+  
 }
