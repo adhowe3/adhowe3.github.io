@@ -22,37 +22,42 @@ body {
     background-size: cover;              /* scale image to cover the whole container */
 }
 
-.section-title {
-    font-size: 24px;
-    font-family: Georgia, 'Times New Roman';
-    color: #000;
-    background: #fff;
-    padding: 12px 24px;              /* More padding for a banner feel */
-    display: block;                  /* Block-level for full width */
-    width: 80%;                      /* Banner width, adjust as needed */
-    max-width: 600px;                /* Optional: max width for large screens */
-    margin: 0 auto 18px auto;        /* Center horizontally, add bottom margin */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    font-weight: bold;
-    text-align: center;              /* Center the text inside */
-    /* White highlight effect */
-    text-shadow: 0 2px 8px #fff, 0 0 2px #fff;
-}
 
 .top-div {
-  margin: 20px 0;
+  margin: 20px 10px 10px 10px;
 }
 
 #main-header {
-  font-size: 24px;
+  font-size: clamp(18px, 5vw, 24px);
   font-weight: bold;
 }
 
 .sub-header {
-  font-size: 16px;   /* smaller than main header */
+  font-size:  clamp(12px, 3vw, 16px);   /* smaller than main header */
   font-weight: normal;
   margin: 4px 0 0 0; /* little spacing below main header */
   color: #ccc;       /* optional: lighter color */
+}
+
+
+.skills-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.skill-token {
+  display: inline-block;     /* key to make it boxy */
+  background-color: #1E3A5F;   
+  color: #fff;               /* white text */
+  border: 1px solid #555;    /* darker gray border */
+  border-radius: 6px;        /* rounded corners */
+  padding: 6px 12px;         /* space inside the box */
+  font-size:  clamp(8px, 2vw, 12px);
+  font-family: monospace;
+  text-align: center;
 }
 
 .image-card {
@@ -60,55 +65,45 @@ body {
   border: 2px solid #fff;
   border-radius: 16px;
   padding: 20px;
-  margin: 30px auto;
-  max-width: 600px;   /* Desktop max size */
-  width: 95vw;        /* Mobile responsiveness */
+  margin: 24px auto;                 /* centers the card */
+  width: min(80vw, 560px);           /* narrower than full, keeps gutters */
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
-
   display: flex;
-  flex-direction: column; /* Stack image + text vertically */
+  flex-direction: column;
   align-items: center;
 }
 
-.skills-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-}
-
-.skill-token {
-    display: inline-block;     /* key to make it boxy */
-    background-color: #1E3A5F;   
-    color: #fff;               /* white text */
-    border: 1px solid #555;    /* darker gray border */
-    border-radius: 6px;        /* rounded corners */
-    padding: 6px 12px;         /* space inside the box */
-    font-size: 12px;
-    font-family: monospace;
-    text-align: center;
-}
-
-.figure-caption {
-    font-size: 12px;        /* smaller than normal text */
-    color: #ccc;            /* lighter color */
-    text-align: center;     /* centered under image */
-    margin-top: 6px;        /* small spacing from image */
-    font-style: italic;     /* optional: italic for caption style */
-}
-
+/* Image scales within the card */
 .image-display {
-    width: 80%;          /* Scale image relative to container */
-    max-width: 300px;    /* Keep it from getting too huge */
-    border-radius: 16px; /* Rounded image corners */
-    display: block;
+  width: 95%;                       /* fill card’s content width */
+  max-width: 300px;                  /* cap on larger screens */
+  height: auto;                      /* maintain aspect ratio */
+  border-radius: 16px;
+  display: block;
 }
 
+/* Text block: readable and flexible */
 .image-text {
   margin-top: 12px;
-  font-size: 13px;
+  font-size: clamp(10px, 2.8vw, 12px);
   color: #fff;
-  width: 100%;        /* make it full width of the card */
-  text-align: left;   /* align text to the left */
-  padding: 0 10px;    /* optional: small left/right padding */
+  width: 100%;
+  text-align: left;
+  padding: 0 10px;
+  line-height: 1.4;                  /* improve readability */
+}
+
+.h2-fluid {
+  font-size: clamp(12px, 3vw, 18px);
+}
+
+/* Optional: make figure-caption consistent with image width */
+.figure-caption {
+  margin-top: 8px;
+  color: #fff;
+  font-size: clamp(8px, 2.5vw, 12px);
+  opacity: 0.9;
+  padding: 0 10px;
+  width: 100%;
+  text-align: center;
 }

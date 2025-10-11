@@ -42,7 +42,7 @@ a:hover {
 
 .project-text {
     color: #000;
-    font-size: 12px;
+    font-size: clamp(8px, 2.5vw, 12px);
     background: #fff;
     font-family: monospace;
     flex: 1;
@@ -63,11 +63,13 @@ a:hover {
     text-align: center;              /* Center the text inside */
     /* White highlight effect */
     text-shadow: 0 2px 8px #fff, 0 0 2px #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .section-container {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 /* Responsive adjustments for mobile screens */
@@ -97,7 +99,7 @@ a:hover {
     /* font-family: monospace; */
     font-size: clamp(20px, 3vmax, 50px);
     text-align: center;
-    text-shadow:3px 3px #4879ff;
+    text-shadow:2px 2px #4879ff;
 }
 
 .star-icon{
@@ -132,6 +134,8 @@ a:hover {
     gap: 10vmin;
     align-content: center;
     justify-content: center;
+    background: black;
+    background-color: transparent;
 }
 
 .link-item {
@@ -142,6 +146,9 @@ a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: white;
+    padding: 6px;
+    border-radius: 8px;
 }
 
 .link-item a {
