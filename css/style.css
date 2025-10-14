@@ -142,9 +142,11 @@ a:hover {
     display: flex;
     max-width: min-content;
     max-height: min-content;
+    min-height: 200px;
     gap: 1vmin;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
     text-align: center;
     background: white;
     padding: 6px;
@@ -163,7 +165,8 @@ a:hover {
 
 .icon{
     width: 25vmin;
-    height: auto;
+    height: 25vmin;
+    object-fit: contain;
 }
 
 body{
