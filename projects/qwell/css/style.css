@@ -1,0 +1,110 @@
+﻿:root {
+    --accent-color: #E17138;      /* Orange for buttons, tags, hover highlights */
+    --bg-color: #F0F2E4;          /* Off-white page background */
+    --hero-bg: #C6E0C3;           /* Mint background for hero section */
+    --text-color: #002E48;        /* Navy text for headings and main content */
+}
+
+/* Hero section background override */
+.project-hero {
+    background-color: var(--hero-bg);
+    padding: 4rem 0;
+}
+
+/* Tags and mono text overrides */
+.project-tags .tag,
+.project-type {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+/* Section headings override for contrast */
+.project-details .section-title {
+    color: var(--text-color);
+}
+
+.project-details ul {
+    padding-left: 2rem; /* increase indent from default */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-details ul li {
+    margin-bottom: 0.6rem; /* spacing between list items */
+    line-height: 1.5;
+}
+
+/* Custom blue link class */
+.link {
+    color: #0077cc;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #005fa3; /* darker blue on hover */
+    text-decoration: underline;
+}
+
+p{
+  margin-bottom: 1rem;
+}
+
+.project-gallery .gallery {
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.gallery-slide {
+    display: none;
+    text-align: center;
+}
+
+.gallery-slide.active {
+    display: block;
+}
+
+.gallery-slide img {
+    width: auto;             /* maintain aspect ratio */
+    max-width: 100%;         /* don’t overflow container */
+    max-height: 350px;       /* all images will fit within this height */
+    margin: 0 auto 0.5rem;   /* center image and spacing for caption */
+    display: block;          /* ensures margin auto centers the image */
+    object-fit: contain;     /* keeps image proportions intact */
+    border-radius: 10px;     /* optional: keeps the rounded corners */
+}
+
+.gallery-slide .caption {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--text-color);
+}
+
+/* Navigation buttons */
+.gallery-prev,
+.gallery-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: var(--accent-color);
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.gallery-prev { left: -1rem; }
+.gallery-next { right: -1rem; }
+
+.gallery-prev:hover,
+.gallery-next:hover {
+    background: rgba(225,113,56,0.8); /* accent hover */
+}
+
+
