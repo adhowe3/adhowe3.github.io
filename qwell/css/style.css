@@ -10,12 +10,12 @@ a:hover {
 }
 
 body {
-    background-color: white;
+    background-color: #F0F2E4;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     text-align: center;
-    background-image: url(../images/q_icon_orange.png);
+    /* background-image: url(../images/q_icon_orange.png); */
     background-size: 50px;
     background-repeat: repeat;        /* don’t tile the image */
 }

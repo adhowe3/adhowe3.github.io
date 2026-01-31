@@ -1,0 +1,175 @@
+﻿@charset "UTF-8";
+
+* {
+    cursor: url('../images/mycursor.png'), auto;
+}
+
+/* cusor for hover */
+a:hover {
+  cursor: url('../images/hand-cursor.png') 0 0, pointer;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;   /* Desktop: up to 600px wide */
+    width: 95vw;        /* Mobile: up to 95% of viewport width */
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.profile-img {
+    width: 120px;       /* Fixed width, height auto */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 24px;
+    border: 2px solid #fff;
+    background: #222;
+    flex-shrink: 0;
+}
+
+.profile-text {
+    color: #fff;
+    font-size: 14px;
+    font-family: monospace;
+    flex: 1;
+}
+
+.project-text {
+    color: #000;
+    font-size: clamp(8px, 2.5vw, 12px);
+    background: #fff;
+    font-family: monospace;
+    flex: 1;
+}
+
+.section-title {
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman';
+    color: #000;
+    background: #fff;
+    padding: 12px 24px;              /* More padding for a banner feel */
+    display: block;                  /* Block-level for full width */
+    width: 80%;                      /* Banner width, adjust as needed */
+    max-width: 600px;                /* Optional: max width for large screens */
+    margin: 0 auto 18px auto;        /* Center horizontally, add bottom margin */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    font-weight: bold;
+    text-align: center;              /* Center the text inside */
+    /* White highlight effect */
+    text-shadow: 0 2px 8px #fff, 0 0 2px #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.section-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 600px) {
+    .profile-box {
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        width: 85vw;
+        max-width: 92vw;
+    }
+    .profile-img {
+        width: 25vw;   
+        max-width: 200px;
+        margin-right: 7px;
+        margin-bottom: 12px;
+    }
+    .profile-text {
+        font-size: 12px;
+    }
+}
+
+#main-header {
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman';
+    font-weight: bold;
+    /* font-family: monospace; */
+    font-size: clamp(20px, 3vmax, 50px);
+    text-align: center;
+    text-shadow:2px 2px #4879ff;
+}
+
+.star-icon{
+    width: 7vmax; 
+    height: auto; /* This maintains the aspect ratio */
+    vertical-align: center; /* This aligns the image with the middle of the text */
+    display: inline-block; /* This makes the image inline with text */
+    margin: 2vw; /* This adds some space between the image and text */
+}
+
+.top-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    padding-top: 2vmax;
+}
+
+#text1{
+    color: green;
+    font-family: monospace;
+    font-size: 3vmin;
+    font-weight: bold;
+    text-align: center;
+    padding: 3vmin;
+}
+
+.links-container{
+    padding-top: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10vmin;
+    align-content: center;
+    justify-content: center;
+    background: black;
+    background-color: transparent;
+}
+
+.link-item {
+    display: flex;
+    max-width: min-content;
+    max-height: min-content;
+    min-height: 200px;
+    gap: 1vmin;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background: white;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.link-item a {
+    color: blue;
+    background-color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+    max-width: 100em;
+    font-family: monospace;
+    font-size: (10px, 2vh, 15px);
+}
+
+.icon{
+    width: 25vmin;
+    height: 25vmin;
+    object-fit: contain;
+}
+
+body{
+    background-color: #161515;
+    /* background-image: url(../images/stars.png); */
+}
