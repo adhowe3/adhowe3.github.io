@@ -109,7 +109,7 @@ p{
 /* Navigation buttons */
 .gallery-prev,
 .gallery-next {
-    cursor: pointer;
+    cursor: url('../../../images/hand-cursor.png') 0 0, pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
